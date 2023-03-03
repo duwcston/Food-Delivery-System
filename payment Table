@@ -1,0 +1,14 @@
+Insert [dbo].[Payment] ( [Payment_id], [Order_id], [Type of payment])
+Values (1,1, 'Tien Mat');
+
+Insert [dbo].[Payment] ( [Payment_id], [Order_id], [Type of payment])
+Values (2,2, 'Online');
+
+Insert [dbo].[Payment] ( [Payment_id], [Order_id], [Type of payment])
+Values (3,3, 'Tien Mat');
+
+Insert [dbo].[Payment] ( [Payment_id], [Order_id], [Type of payment])
+Values (4,4, 'Tien Mat');
+
+Insert [dbo].[Payment] ( [Payment_id], [Order_id], [Type of payment])
+Values (5,5, 'Online');
