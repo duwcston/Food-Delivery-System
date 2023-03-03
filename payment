@@ -1,0 +1,11 @@
+Create Database FoodDeliveryApp
+Go
+   Use FoodDeliveryApp
+   Go
+      Create Table Payment
+	  (  
+	      PaymentId Int Unique Not Null,
+		  OrderId Int Unique Not Null,
+      Type_of_payment nvarchar(20) default N'Tien mat"
+	  )
+	  Go
