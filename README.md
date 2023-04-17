@@ -1,5 +1,5 @@
 # PDM
-Food Delivery System for PDM Class
+International University VNU - Principle of Database Management Project
 
 - Java version: JDK 17
 - Using MS SQL Server to input the data
