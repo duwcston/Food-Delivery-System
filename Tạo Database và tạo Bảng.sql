@@ -9,7 +9,7 @@ Go
 		  Contact_Num nvarchar(50) ,
 		  CustomerAddress nvarchar(50),
 		  Email nvarchar(50),
-		  Password nvarchar(50)
+		  Cust_Password nvarchar(50)
 	  )
 	  Go
 	
