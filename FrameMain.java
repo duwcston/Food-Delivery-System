@@ -105,7 +105,7 @@ public class FrameMain extends javax.swing.JFrame {
         }
         txtResult.selectAll();
         txtResult.replaceSelection("");
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;DatabaseName=FoodDeliveryApp;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
+        String connectionUrl = "jdbc:sqlserver://localhost:1433;DatabaseName=FoodDeliveryApplication;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
  
         try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
             String SQL = txtQuery.getText();
