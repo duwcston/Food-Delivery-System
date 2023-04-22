@@ -1,179 +1,94 @@
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (1 , 1, 'BBQ Ribs', ' ', 30) ;
+Use FoodDelivery
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (2 , 1, 'Lentil Soup', ' ', 28) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Chiken', 'Excellent chicken dish', 5 , 'A3112') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (3 , 1, 'Buffalo Wings', ' ', 29) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Soup', 'Excellent soup dish', 2 , 'A3112') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (4 , 2, 'Club Sandwiches', ' ', 7) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Meat', 'Excellent meat dish', 3 , 'A3112') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (5 , 2, 'Shrimp', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Bread', 'Excellent bread dish', 4 , 'H92N') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (6 , 2, 'Ice Cream', ' ', 5) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Lopster', 'Excellent lopster dish', 5 , 'H92N') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (7 , 3, 'Basmati Rice', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Soup', 'Excellent soup dish', 2 , 'H92N') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (8 , 3, 'BBQ Ribs', ' ', 31) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Potato Chips', 'Excellent Potato chips dish', 3 , '231M') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (9 , 3, 'Fish Sticks', ' ', 20) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Spaghetti', 'Excellent spaghetti dish', 3 , '231M') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (10 , 4, 'Greek Salad', ' ', 10) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Chiken', 'Excellent chicken dish', 4 , '231M') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (11 , 4, 'Shrimp', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Ice Cream', 'Excellent Ice cream dish', 2 , 'D9C3') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (12 , 4, 'Brown Rice', ' ', 14) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Donut', 'Excellent donut dish', 1 , 'D9C3') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (13 , 5, 'Beef Tacos  ', ' ', 34) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Soup', 'Excellent soup dish', 1 , 'D9C3') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (14 , 5, 'Jambalaya', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Basmati Rice', 'Excellent chicken dish', 4, 'U21U') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (15 , 5, 'Brown Rice', ' ', 18) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'HotDogs', 'Excellent Basmati Rice dish', 3 , 'U21U') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (16 , 6, 'Donuts', ' ', 7) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Spaghetti', 'Excellent Spaghetti dish', 5 , 'U21U') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (17 , 6, 'Grilled Cheese', ' ', 21) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Club Sandwiches', 'Excellent Club Sandwiches', 3, 'O23V') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (18 , 6, 'Popcorn', ' ', 11) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Donut', 'Excellent donut', 2 , 'O23V') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (19 , 7, 'Fish Sticks', ' ', 20) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Meatballs', 'Excellent meatballs dish', 3 , 'O23V') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (20 , 7, 'Grilled Cheese', ' ', 21) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Strawberries', 'Excellent Strawberries dish', 3 , '41OA') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (21 , 7, 'Club Sandwiches', ' ', 7) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Beef Tacos', 'Excellent Beef Tacos dish', 4 , '41OA') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (22 , 8, 'Onion Rings', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Ice Cream', 'Excellent Ice Cream', 4 , '41OA') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (23 , 8, 'Hot Dogs', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Donut', 'Excellent donut', 5 , '525P') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (24 , 8, 'Club Sandwiches', ' ', 7) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Lopster', 'Excellent lopster dish', 5 , '525P') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (25 , 9, 'Greek Salad', ' ', 11) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Club Sandwiches', 'Excellent Club Sandwiches', 2 , '525P') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (26 , 9, 'Hot Dogs', ' ', 12) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Chicken', 'Excellent chicken dish', 3 , 'P41F') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (27 , 9, 'Club Sandwiches', ' ', 7) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Spaghetti', 'Excellent Spaghetti dish', 5 , 'P41F') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (28 , 10, 'Buffalo Wings', ' ', 31) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Potato Chips', 'Excellent Potato Chips', 5 , 'P41F') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (29 , 10, 'Beef Tacos', ' ', 22) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f1' , 'Basmati Rice', 'Excellent Basmati Rice dish', 5 , 'L0G7') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (30 , 10, 'Popcorn', ' ', 8) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f2' , 'Donut', 'Excellent Donut', 5 , 'L0G7') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (31 , 11, 'Basmati Rice', ' ', 21) ;
+Insert dbo.Menu ( Food_Id, Food_Name, Food_Description, rating, Res_Id)
+Values ('f3' , 'Grilled Cheese', 'Excellent Grilled Cheese dish', 5 , 'L0G7') ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (32 , 11, 'Onion Rings', ' ', 14) ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (33 , 11, 'Shrimp', ' ', 17) ;
 
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (34 , 12, 'Meatballs', ' ', 19) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (35 , 12, 'Beef Tacos', ' ', 14) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (36 , 12, 'Bento Box', ' ', 20) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (37 , 13, 'Soup', ' ', 19) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (38 , 13, 'Beef Tacos', ' ', 32) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (39 , 13, 'Grilled Cheese', ' ', 42) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (40 , 14, 'Hot Dogs', ' ', 13) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (41 , 14, 'Beef Tacos', ' ', 23) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (42 , 14, 'Ice Cream', ' ', 8) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (43 , 15, 'Jambalaya', ' ', 13) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (44 , 15, 'Beef Tacos', ' ', 23) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (45 , 15, 'Brown Rice', ' ', 18) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (46 , 16, 'Chicken Sandwich', ' ', 13) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (47 , 16, 'Beef Tacos', ' ', 15) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (48 , 16, 'Lentil Soup', ' ', 10) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (49 , 17, 'Strawberries', ' ', 10) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (50 , 17, 'Spaghetti', ' ', 23) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (51 , 17, 'Pad Thai', ' ', 10) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (52 , 18, 'Bento Box', ' ', 19) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (53 , 18, 'Popcorn', ' ', 9) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (54 , 18, 'Chicken Sandwich', ' ', 26) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (55 , 19, 'Soup', ' ', 17) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (56 , 19, 'Fish Sticks', ' ', 14) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (57 , 19, 'Greek Salad', ' ', 23) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (58 , 20, 'Soup', ' ', 19) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (59 , 20, 'Beef Tacos', ' ', 15) ;
-
-Insert dbo.Menu ( Food_Id, Res_Id, Food_Name, Description_Info, Price)
-Values (60 , 20, 'Pasta', ' ', 33) ;
