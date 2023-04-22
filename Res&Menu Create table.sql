@@ -1,18 +1,18 @@
-Use FoodDeliveryApp
+Use FoodDelivery
    Go
-      Create Table Restaurant
-	  (  
-	      Res_Id Int Unique Not Null,
-		  Res_Name nvarchar(50),
-		  Res_Address varchar(50),
+      Create Table Restaurant (  
+	      Res_ID varchar(10) NOT NULL,
+		  Res_Name varchar(50) NOT NULL,
+		  Res_Address varchar(50) NOT NULL,
+		  PRIMARY KEY (Res_ID),
 	  )
 	  Go
-	  Create Table Menu
-	  (  
-	      Food_Id Int Unique Not Null,
-		  Res_Id int Not Null,
-		  Food_Name varchar(10) ,
-		  Description_Info varchar(255) ,
-		  Price Int
+	  Create Table Menu(
+		  Food_ID varchar(2) NOT NULL,
+		  Food_name varchar(50) NOT NULL,
+		  Food_Description varchar(255),
+		  rating int,
+		  Res_ID varchar(10) NOT NULL FOREIGN KEY REFERENCES Restaurant(Res_ID),
+		  PRIMARY KEY (Food_ID, Res_ID),
 	  )
 	  Go
