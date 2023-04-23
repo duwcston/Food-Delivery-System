@@ -1,29 +1,89 @@
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values ('p1','chicken',3,'f1','A3112');
+Values ('p01','chicken',3,'f1','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values ('p2','soup',5,'f2','A3112');
+Values ('p02','soup',5,'f2','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values ('p3','meat',4,'f3','A3112');
+Values ('p03','meat',4,'f3','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values ('p4','bread',8,'f1','H92N');
+Values ('p04','bread',8,'f1','H92N');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (5,5, 'Online');
+Values ('p05','lopster',6,'f2','H92N');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (6,6, 'Tien Mat');
+Values ('p06','soup',8,'f3','H92N');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (7,7, 'Online');
+Values ('p07','potato chips',2,'f1','231M');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (8,8, 'Tien Mat');
+Values ('p08','spaghetti',4,'f2','231M');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (9,9, 'Tien Mat');
+Values ('p09','chicken',7,'f3','231M');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (10,10, 'Online');
+Values ('p10','ice cream',5,'f1','D9C3');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p11','donut',2,'f2','D9C3');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p12','soup',4,'f3','D9C3');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p13','Basmati Rice',5,'f1','U21U');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p14','Hot Dogs',1,'f2','U21U');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p15','spaghetti',2,'f3','U21U');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p16','Club Sandwiches',2,'f1','O23V');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p17','donut',2,'f2','O23V');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p18','Meatballs',1,'f3','O23V');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p19','Strawberries',4,'f1','41OA');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p20','Beef Tacos',4,'f2','41OA');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p21','ice cream',2,'f3','41OA');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p22','donut',1,'f1','525P');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p23','lopster',2,'f2','525P');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p24','Club Sandwiches',3,'f3',525P');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p25','chicken',6,'f1','P41F');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p26','spaghetti',5,'f2','P41F');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p27','potato chips',3,'f3','P41F');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p28','Basmati Rice',4,'f1','L0G7');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p29','donut',2,'f2','L0G7');
+
+Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
+Values ('p30','Grilled Cheese',5,'f3','L0G7');
