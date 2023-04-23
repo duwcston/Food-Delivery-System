@@ -1,29 +1,89 @@
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Food_Id, Shipper_Id, Payment_Id, Order_time )
-Values (1,1,1,1,1,1,2023-02-14 );
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo1','D1W12','f3','O23v','p18',2 ,2,'Credit');
 
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating )
-Values (2,2,2,2,2,2,2023-02-21);
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo2','D1W12','f1','A3112','p1',1 ,3,'Cash' );
 
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating  )
-Values (3,3,3,3,3,3,2023-02-24);
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo3','H13AS7','f2','H92N','p5',1 ,6,'Credit' );
 
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating  )
-Values (4,4,4,4,4,4,2023-02-14);
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo4','O141S1','f3','41OA','p21',2 ,4,'Credit' );
 
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating  )
-Values (5,5,5,5,5,5,2023-01-31);
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo5','P51T31','f3','U21U','p15',3 ,6,'Cash' );
 
-Insert  Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating  )
-Values (6,6,6,6,6,6,2023-02-02);
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo6','P51T31','f1','P41F','p25',1 ,6,'Cash' );
 
-Insert  Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating  )
-Values (7,7,7,7,7,7,2023-01-25);
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo7','513EB','f2','231M','p8',1 ,4,'Cash' );
 
-Insert  Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating )
-Values (8,8,8,8,8,8,2023-01-10);
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo8','Q31H3','f2','D9C3','p11',2 ,4,'Credit' );
 
-Insert Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating )
-Values (9,9,9,9,9,9,2023-01-06);
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo9','M4D1R','f3','U21U','p15',1 ,2,'Credit' );
 
-Insert  Bill_reports ( Bill_ID,Cust_Id, Order_Id, Supply_Id ,Food_Id, Delivery_Id, Payment_Id, Date, Rating )
-Values (10,10,10,10,10,10,2023-02-28);
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo10','M4D1R','f1','L0G7','p28',4 ,16,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo11','D1W12','f3','A3112','p3',1 ,4,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo12','H13AS7','f1','H92N','p4',1 ,8,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo13','Q31H3','f2','41OA','p20',2 ,8,'Cash' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo14','Q31H3','f1','U21U','p13',3 ,15,'Credit' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo15','K14F2','f2','D9C3','p11',5 ,10,'Cash' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo16','K14F2','f3','525P','p24',2,6,'Cash' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo17','L41FB1','f1','O23V','p16',3 ,6,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo18','513EB','f2','P41F','p20',1 ,4,'Credit' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo19','P51T31','f2','H92N','p5',4 ,24,'Cash' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo20','O141S1','f3','525P','p18',1 ,3,'Cash' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo21','O141S1','f1','D9C3','p10',2,10,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo22','D1W12','f1','231M','p18',4,8,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo23','N13R4T','f1','H92N','p4',2,16,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo24','J2D24','f3','P41F','p27',1,3,'Credit' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo25','J2D24','f2','U21U','p14',4,4,'Cash' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo26','U134D','f1','41OA','p19',4,16,'Credit' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo27','P51T31','f3','O23V','p18',1 ,1,'Credit' );
+
+Insert [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo28','U134D','f2','D9C3','p11',3 ,6,'Cash' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo29','K14F2','f1','L0G7','p28',1 ,4,'Credit' );
+
+Insert  [dbo].[Bill_reports]  ([fOrder_ID], [C_ID], [Food_Id], [Res_Id], [P_Id] ,[Amount] ,[Grand_Total] ,[Method] )
+Values ('fo30','Q31H3','f3','U21U','p15',2 ,4,'Cash' );
