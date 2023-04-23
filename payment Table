@@ -1,14 +1,14 @@
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values ('p1',1, 'Tien Mat');
+Values ('p1','chicken',3,'f1','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (2,2, 'Online');
+Values ('p2','soup',5,'f2','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (3,3, 'Tien Mat');
+Values ('p3','meat',4,'f3','A3112');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
-Values (4,4, 'Tien Mat');
+Values ('p4','bread',8,'f1','H92N');
 
 Insert [dbo].[Payment] ( [P_ID], [food_name], [price],[food_Id],[Res_ID])
 Values (5,5, 'Online');
