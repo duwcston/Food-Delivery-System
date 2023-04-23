@@ -14,9 +14,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[Payment](
-	[Payment_id] [int] NOT NULL,
-	[Order_id] [int] NOT NULL,
-	[Type of payment] [varchar](20) NOT NULL
-) ON [PRIMARY]
+	[P_ID] [int] NOT NULL,
+	[food_name] [varchar](50) NOT NULL,
+	[price] [int] NOT NULL,
+	[food_Id] [varchar](20) NOT NULL,
+	[Res_Id] [varchar](20) NOT NULL,
+	PRIMARY KEY (P_ID)
+)
 GO
 
