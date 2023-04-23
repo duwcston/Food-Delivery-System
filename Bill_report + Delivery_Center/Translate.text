@@ -1,6 +1,0 @@
-Customers(Cust_ID, Name, Contact_num)
-Restaurant(Res_ID, Food_ID Name, Address)
-Food(Food_ID, Res_ID, Name, Description,rating)
-Bill_report(Bill_ID, Order_time,Cust_ID,Food_ID,Payment_ID,Shipper_ID)
-Payment(Payment_ID ,Price, Amount, Method)
-Delivery_center(Shipper_ID, Shipper_phone_num,Shipper_name,Cust_ID)
