@@ -4,7 +4,7 @@ Go
    Go
       Create Table Customer
 	  (  
-	      CustomerId Int Unique Not Null,
+	      CustomerId nvarchar(50) Unique Not Null,
 		  CustomerName nvarchar(50) ,
 		  Contact_Num nvarchar(50) ,
 		  CustomerAddress nvarchar(50),
