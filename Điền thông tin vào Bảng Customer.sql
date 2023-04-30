@@ -1,5 +1,5 @@
 Insert into dbo.Customer
-        ( C_ID, C_Name, Phone_Num, Address, Email, Password)
+        ( C_ID, C_Name, Phone_Num, Address, Email, C_Password)
  Values ('D1W12', 'Sylvia Villanueva', '209-200-7592','961 Katlyn Estates','zirutolexo-2470@yopmail.com','xMlda3y7gB'),
 	('H13AS7', 'Jalen Pineda', '209-201-5657','547 Katrine Villages','cruxeikeprici-4266@yopmail.com','0jlJaAg52N'),
 	('O141S1', 'Brady Nelson','209-202-2321','231 Block Loaf','hittesitricru-1251@yopmail.com','yCxfjGP7MB'),
