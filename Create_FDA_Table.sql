@@ -1,7 +1,7 @@
 CREATE TABLE Customer (  
 	C_ID 				varchar(10)				NOT NULL,
 	C_name 				varchar(30)				NOT NULL,
-	C_phone		 		Int					NOT NULL,
+	C_phone		 		varchar(20)				NOT NULL,
 	C_address 			varchar(30)				NOT NULL,
 	C_email				varchar(50)				Unique,
 	C_password			varchar(15)				NOT NULL,
