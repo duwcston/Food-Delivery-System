@@ -109,7 +109,7 @@ public class FrameMain extends javax.swing.JFrame {
     }// </editor-fold>                        
 
     private void btnRunActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        String connectionString = "jdbc:sqlserver://localhost:1433;DatabaseName=BikeStores;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
+        String connectionString = "jdbc:sqlserver://localhost:1433;DatabaseName=FoodDeliveryApplication;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
         try {
             Connection connection = DriverManager.getConnection(connectionString);
             Statement statement = connection.createStatement();
