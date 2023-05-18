@@ -123,6 +123,7 @@ public class FrameMain extends javax.swing.JFrame {
             }
 
             DefaultTableModel model = (DefaultTableModel) tableResult.getModel();
+            model.setRowCount(0);
             model.setColumnIdentifiers(columnNames);
 
             while (resultSet.next()) {
