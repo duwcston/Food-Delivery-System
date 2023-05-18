@@ -43,7 +43,7 @@ public class FrameMain extends javax.swing.JFrame {
         btnRun = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tableResult = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,7 +62,7 @@ public class FrameMain extends javax.swing.JFrame {
 
         jLabel2.setText("      Query:");
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tableResult.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -70,7 +70,7 @@ public class FrameMain extends javax.swing.JFrame {
 
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(tableResult);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,16 +93,16 @@ public class FrameMain extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtQuery, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnRun)))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
+                            .addComponent(txtQuery, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRun))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
@@ -122,7 +122,7 @@ public class FrameMain extends javax.swing.JFrame {
                 columnNames.add(metaData.getColumnName(i));
             }
 
-            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            DefaultTableModel model = (DefaultTableModel) tableResult.getModel();
             model.setColumnIdentifiers(columnNames);
 
             while (resultSet.next()) {
@@ -132,7 +132,7 @@ public class FrameMain extends javax.swing.JFrame {
                 }
                 model.addRow(rowData);
             }
-            jTable1.setModel(model);
+            tableResult.setModel(model);
 
             resultSet.close();
             statement.close();
@@ -185,7 +185,7 @@ public class FrameMain extends javax.swing.JFrame {
     private javax.swing.JButton btnRun;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable tableResult;
     private javax.swing.JTextField txtQuery;
     // End of variables declaration                   
 }
