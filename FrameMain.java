@@ -5,7 +5,12 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -36,9 +41,9 @@ public class FrameMain extends javax.swing.JFrame {
 
         txtQuery = new javax.swing.JTextField();
         btnRun = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        txtResult = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,11 +60,17 @@ public class FrameMain extends javax.swing.JFrame {
             }
         });
 
-        txtResult.setColumns(20);
-        txtResult.setRows(5);
-        jScrollPane1.setViewportView(txtResult);
-
         jLabel2.setText("      Query:");
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -72,11 +83,12 @@ public class FrameMain extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtQuery, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnRun))
+                        .addComponent(btnRun)
+                        .addGap(0, 27, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 710, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jScrollPane2)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -88,49 +100,45 @@ public class FrameMain extends javax.swing.JFrame {
                             .addComponent(txtQuery, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRun)))
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 344, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>                        
 
     private void btnRunActionPerformed(java.awt.event.ActionEvent evt) {                                       
-        // TODO add your handling code here:
-        // TODO add your handling code here:
-        if (txtQuery.getText().length() == 0) {
-            JOptionPane.showMessageDialog(null, "Please input query string!", "Message", JOptionPane.WARNING_MESSAGE);
-            return;
-        }
-        txtResult.selectAll();
-        txtResult.replaceSelection("");
-        String connectionUrl = "jdbc:sqlserver://localhost:1433;DatabaseName=FoodDeliveryApplication;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
- 
-        try (Connection con = DriverManager.getConnection(connectionUrl); Statement stmt = con.createStatement();) {
-            String SQL = txtQuery.getText();
-            ResultSet rs = stmt.executeQuery(SQL);
- 
-            // Iterate through the data in the result set and display it.
-            // process query results
-            StringBuilder results = new StringBuilder();
-            ResultSetMetaData metaData = rs.getMetaData();
-            int numberOfColumns = metaData.getColumnCount();
-            for (int i = 1; i <= numberOfColumns; i++) {
-                results.append(metaData.getColumnName(i)).append("\t");
+        String connectionString = "jdbc:sqlserver://localhost:1433;DatabaseName=BikeStores;user=sa;password=sa;encrypt=true;trustServerCertificate=true";
+        try {
+            Connection connection = DriverManager.getConnection(connectionString);
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(txtQuery.getText());
+
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            int columnCount = metaData.getColumnCount();
+            Vector<String> columnNames = new Vector<>();
+            for (int i = 1; i <= columnCount; i++) {
+                columnNames.add(metaData.getColumnName(i));
             }
-            results.append("\n");
-            //  Metadata
-            while (rs.next()) {
-                for (int i = 1; i <= numberOfColumns; i++) {
-                    results.append(rs.getObject(i)).append("\t");
+
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            model.setColumnIdentifiers(columnNames);
+
+            while (resultSet.next()) {
+                Vector<String> rowData = new Vector<>();
+                for (int i = 1; i <= columnCount; i++) {
+                    rowData.add(resultSet.getString(i));
                 }
-                results.append("\n");
+                model.addRow(rowData);
             }
-            txtResult.setText(results.toString());
-        } // Handle any errors that may have occurred.
-        catch (SQLException e) {            
-            txtResult.setText(e.getMessage());
+            jTable1.setModel(model);
+
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(this, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }                                      
 
@@ -176,8 +184,8 @@ public class FrameMain extends javax.swing.JFrame {
     // Variables declaration - do not modify                     
     private javax.swing.JButton btnRun;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
     private javax.swing.JTextField txtQuery;
-    private javax.swing.JTextArea txtResult;
     // End of variables declaration                   
 }
